@@ -55,7 +55,41 @@ static void UseGenericStack()
     }
 };
 
+static void UsegenericQueue()
+{
+    Queue<Person> peopleQ = new();
+    peopleQ.Enqueue(new Person("Homer", "Simpson", 45));
+    peopleQ.Enqueue(new Person("Marge", "Simpson", 42));
+    peopleQ.Enqueue(new Person("Liza", "Simpson", 15));
+    peopleQ.Enqueue(new Person("Bart", "Simpson", 5));
+
+    Console.WriteLine($"{peopleQ.Peek().ToString()}");
+    GetCoffee(peopleQ.Dequeue());
+    GetCoffee(peopleQ.Dequeue());
+    GetCoffee(peopleQ.Dequeue());
+    GetCoffee(peopleQ.Dequeue());
+
+    try
+    {
+        GetCoffee(peopleQ.Dequeue());
+    }
+    catch (InvalidOperationException ex)
+    {
+        Console.WriteLine($"Error! {ex.Message}");
+    }
+
+
+
+};
+
+static void GetCoffee(Person P)
+{
+    Console.WriteLine($"{P.ToString()} got cofee!");
+}
+
 
 //UseGenericsList();
 
-UseGenericStack();
+//UseGenericStack();
+
+UsegenericQueue();
