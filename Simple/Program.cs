@@ -1,9 +1,14 @@
-﻿for (int i = 1; i < 10; i++)
+﻿using System;
+using System.Collections.Generic;
+using table_ymnojenia;
+
+static void UseGenericList()
 {
-    for (int j = 1; j < 10; j++)
+    List<Person> people = new List<Person>()
     {
-        Console.Write($"{j}:{i}*{j} = {i * j}\t");
-    }
-    Console.WriteLine();
+       new Person(firstName="Alustar"),
+
+    };
 }
-Console.ReadLine();
+
+UseGenericList();

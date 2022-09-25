@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleGC", "SimpleGC\SimpleGC.csproj", "{EDCFDF37-465E-4D0A-A6D0-CBB9F9A60321}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "table_ymnojenia", "Simple\table_ymnojenia.csproj", "{4D4EC280-6D14-4E4D-AAF3-80B43FC418CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunWithCollectionInitialization", "FunWithCollectionInitialization\FunWithCollectionInitialization.csproj", "{5F600E59-1360-45A3-9152-08D52DFB1713}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{EDCFDF37-465E-4D0A-A6D0-CBB9F9A60321}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDCFDF37-465E-4D0A-A6D0-CBB9F9A60321}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDCFDF37-465E-4D0A-A6D0-CBB9F9A60321}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D4EC280-6D14-4E4D-AAF3-80B43FC418CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D4EC280-6D14-4E4D-AAF3-80B43FC418CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D4EC280-6D14-4E4D-AAF3-80B43FC418CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D4EC280-6D14-4E4D-AAF3-80B43FC418CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F600E59-1360-45A3-9152-08D52DFB1713}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F600E59-1360-45A3-9152-08D52DFB1713}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F600E59-1360-45A3-9152-08D52DFB1713}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F600E59-1360-45A3-9152-08D52DFB1713}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
