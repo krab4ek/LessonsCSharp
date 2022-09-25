@@ -27,4 +27,35 @@ static void UseGenericsList()
         Console.WriteLine(person);
 };
 
-UseGenericsList();
+static void UseGenericStack()
+{
+    Stack<Person> stackofPeople = new();
+    stackofPeople.Push(new Person("Homer", "Simpson", 45));
+    stackofPeople.Push(new Person("Marge", "Simpson", 42));
+    stackofPeople.Push(new Person("Liza", "Simpson", 15));
+    stackofPeople.Push(new Person("Bart", "Simpson", 5));
+
+    Console.WriteLine($"First person is:{stackofPeople.Peek()}");
+    Console.WriteLine($"Popped off {stackofPeople.Pop()}");
+    Console.WriteLine($"\nFirst person is:{stackofPeople.Peek()}");
+    Console.WriteLine($"Popped off {stackofPeople.Pop()}");
+    Console.WriteLine($"\nFirst person is:{stackofPeople.Peek()}");
+    Console.WriteLine($"Popped off {stackofPeople.Pop()}");
+    Console.WriteLine($"\nFirst person is:{stackofPeople.Peek()}");
+    Console.WriteLine($"Popped off {stackofPeople.Pop()}");
+    try
+    {
+        Console.WriteLine($"\nFirst person is:{stackofPeople.Peek()}");
+        Console.WriteLine($"Popped off {stackofPeople.Pop()}");
+    }
+    catch (InvalidOperationException ex)
+    {
+
+        Console.WriteLine($"\nError! {ex.Message}"); ;
+    }
+};
+
+
+//UseGenericsList();
+
+UseGenericStack();
